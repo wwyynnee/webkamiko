@@ -39,6 +39,15 @@ html, body {
         text-align: center;
         h2, p {
           width: calc(100vw - 14rem);
+          @media screen and (max-width: 1024px) {
+            width: calc(100vw - 10rem);
+          }
+          @media screen and (max-width: 768px) {
+            width: calc(100vw - 6rem);
+          }
+          @media screen and (max-width: 480px) {
+            width: calc(100vw - 2rem);
+          }
         }
         h2 {
           font-size: 2rem;
@@ -50,16 +59,35 @@ html, body {
       ul {
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
         li {
           background-color: $dark-color;
           border-radius: 10px;
           padding: .75rem 2rem;
-          margin: 1rem .25rem;
+          margin: 1rem .25rem 0;
+          text-align: center;
           color: #777;
           &:hover {
             color: white;
           }
+          @media screen and (max-width: 417px) {
+            width: calc(50% - .5rem);
+            padding: .75rem 0;
+          }
         }
+        @media screen and (max-width: 480px) {
+          justify-content: center;
+        }
+      }
+      @media screen and (max-width: 1024px) {
+        padding: 0 5rem;
+      }
+      @media screen and (max-width: 768px) {
+        padding: 0 3rem;
+      }
+      @media screen and (max-width: 480px) {
+        padding: 0 1rem;
       }
     } 
   }
@@ -70,12 +98,31 @@ html, body {
       max-width: 1200px;
       padding: 0 7rem;
       margin: .5rem 0;
+      @media screen and (max-width: 1024px) {
+        padding: 0 5rem;
+      }
+      @media screen and (max-width: 768px) {
+        padding: 0 3rem;
+      }
+      @media screen and (max-width: 480px) {
+        padding: 0 1rem;
+      }
     }
     &__container {
+      margin-bottom: 1rem;
       details {
         background-color: $dark-color;
         border-radius: 10px;
         width: calc(100vw - 14rem);
+        @media screen and (max-width: 1024px) {
+          width: calc(100vw - 10rem);
+        }
+        @media screen and (max-width: 768px) {
+          width: calc(100vw - 6rem);
+        }
+        @media screen and (max-width: 480px) {
+          width: calc(100vw - 2rem);
+        }
         summary {
           padding: 1.5rem;
           display: flex;
