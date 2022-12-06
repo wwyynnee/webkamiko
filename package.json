@@ -1,0 +1,14 @@
+{
+  "name": "kamiko",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "sass --watch scss/styles.scss style_cmd.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}

@@ -1,0 +1,11 @@
+$color: #e9cdeb;
+$dark-color: #242424;
+$span-color: #9c9c9c;
+
+::-webkit-scrollbar {
+  background-color: #151515;
+  width: 6px;
+  &-thumb {
+    background-color: $color;
+  }
+}

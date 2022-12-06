@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Andika&family=DynaPuff:wght@500&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,88 +6,84 @@
   margin: 0;
 }
 
+:root {
+  --color: #e9cdeb;
+  --font: "Inter", sans-serif;
+}
+
 ::-webkit-scrollbar {
+  background-color: #151515;
   width: 6px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--color);
 }
 
-::-webkit-scrollbar {
-  background-color: #pink;
-}
-
-:root {
-  --color: #e9cdeb
-}
-
 html, body {
   height: 100%;
   width: 100%;
-  font-family: 'Andika', sans-serif;
+  font-family: var(--font);
   user-select: none;
 }
 
-.wrapper .nav {
+.nav {
   display: flex;
   align-items: center;
   background-color: #151515;
   position: fixed;
   width: 100vw;
-  height: 3rem;
+  height: 3.5rem;
   z-index: 3;
   justify-content: space-between;
 }
 
-.wrapper .nav__container {
+.nav .nav__items, .nav .nav__items a {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.nav__container {
+  display: flex;
+}
+
+.nav__items:nth-child(1) .nav__container:nth-child(1) {
   margin: 0 1rem;
 }
 
-.wrapper .nav__container img {
-  width: 3rem;
+.nav__container img {
+  width: 3.5rem;
   padding: 0.25rem;
   margin-right: 0.25rem;
 }
 
-.wrapper .nav__container p {
-  color: pink;
-  font-size: 1.025rem;
-}
-  
-.wrapper .nav__container:nth-child(2) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: calc(100% - 2rem);
-}
-
 @media screen and (max-width: 768px) {
-  .wrapper .nav__container:nth-child(2) {
+  .nav__container:nth-child(2) {
     display: none;
   }
 }
 
-.wrapper .nav__container:nth-child(3) {
+.nav .nav__items:nth-child(2) .nav__container {
   display: none;
-  font-size: 2rem;
-  height: 3rem;
+  align-items: center;
+  font-size: 2.25rem;
+  height: 3.5rem;
   color: white;
   z-index: 2;
+  padding: 0 1rem;
 }
+
 @media screen and (max-width: 768px) {
-  .wrapper .nav__container:nth-child(3) {
+  .nav .nav__items:nth-child(2) .nav__container {
     display: flex;
   }
 }
 
-.wrapper .nav__container a {
+.nav__container a {
   text-decoration: none;
 }
   
-.wrapper .nav__container a button {
+.nav__container a button {
   background: transparent;
   border-radius: 4px;
   font-size: 1.025rem;
@@ -95,15 +91,15 @@ html, body {
   outline: none;
   border: none;
   color: white;
-  height: 3rem;
-  width: 7rem;
+  height: 3.5rem;
+  padding: 0 1rem;
 }
 
-.wrapper .nav__container a button:hover {
-  color: pink;
+.nav__container a button:hover {
+  color: var(--color);
 }
 
-.wrapper .info__close {
+.info__close {
   color: white;
   font-size: 2rem;
   position: absolute;
@@ -111,11 +107,11 @@ html, body {
   top: 0;
   padding: 1rem;
 }
-.wrapper .info ul {
+.info ul {
   list-style: none;
   width: 100%;
 }
-.wrapper .info ul a {
+.info ul a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,13 +122,13 @@ html, body {
   margin: 1rem;
 }
 
-.wrapper .info {
+.info {
   display: flex;
   font-size: 1.2rem;
   color: black;
   flex-direction: column;
   justify-content: center;
-  padding-top: 3rem;
+  padding-top: 3.5rem;
   height: 100vh;
   align-items: center;
 }
@@ -208,7 +204,7 @@ html, body {
 
 @media screen and (max-width: 600px) {
   .main {
-    padding: 0 3rem;
+    padding: 0 3.5rem;
   }
 }
 
@@ -233,4 +229,39 @@ html, body {
    color: #333;
    border: 1px #ccc solid;
    cursor: pointer;
+}
+.advantages{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  
+}
+.uptime{
+  border: 2px solid #0dd0f8;
+  border-radius: 10px;
+  padding: 1.3rem;
+  margin-right: 9rem;
+  margin-left: 3rem;
+}
+.chat{
+  border: 2px solid #0b7cf4;
+  border-radius: 10px;
+  padding: 1.3rem;
+  margin-right: 7rem;
+  margin-left: 3rem;
+}
+.function2{
+  border: 2px solid #2634f2;
+  border-radius: 10px;
+  padding: 1.3rem;
+  margin-right: 5rem;
+  margin-left: 3rem;
+}
+
+.text3{
+  border: 2px solid #000fe6;
+  border-radius: 10px;
+  padding: 1.3rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
 }

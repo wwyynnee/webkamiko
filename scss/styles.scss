@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika&display=swap");
+
+@import "nav";
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin noneAnimation {
+  animation: none;
+  -webkit-animation: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html, body {
+  font-family: "Andika", sans-serif;
+  background-color: #363636;
+  user-select: none;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+.wrapper {
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3.5rem;
+    &__items {
+      max-width: 1200px;
+      font-weight: 300;
+      margin: 1rem 0 0;
+      padding: 0 7rem;
+      &:first-child {
+        text-align: center;
+        h2, p {
+          width: calc(100vw - 14rem);
+        }
+        h2 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.1rem;
+        }
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        li {
+          background-color: $dark-color;
+          border-radius: 10px;
+          padding: .75rem 2rem;
+          margin: 1rem .25rem;
+          color: #777;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    } 
+  }
+  .cmd {
+    display: flex;
+    flex-direction: column;
+    &__items {
+      max-width: 1200px;
+      padding: 0 7rem;
+      margin: .5rem 0;
+    }
+    &__container {
+      details {
+        background-color: $dark-color;
+        border-radius: 10px;
+        width: calc(100vw - 14rem);
+        summary {
+          padding: 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          div {
+            @include center;
+            svg {
+              @include noneAnimation;
+              fill: #363636;
+            }
+            .fillActive {
+              @include noneAnimation;
+              fill: $color;
+            }
+            p {
+              font-size: 1.2rem;
+              font-weight: 500;
+              margin: 0 1rem;
+              span {
+                font-size: 1.025rem;
+                color: $span-color;
+              }
+            }
+          }
+          svg {
+            animation: 250ms linear 0s rot;
+            -webkit-animation: 250ms linear 0s rot;
+            transform: rotate(180deg);
+          }
+          .transformActive {
+            animation: 250ms linear 0s rot-2;
+            -webkit-animation: 250ms linear 0s rot-2;
+            transform: rotate(0);
+          }
+        }
+        @keyframes rot {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(180deg);
+          }
+        }
+        @-webkit-keyframes rot {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(180deg);
+          }
+        }
+        @keyframes rot-2 {
+          0% {
+            transform: rotate(180deg);
+          }
+          100% {
+            transform: rotate(0);
+          }
+        }
+        @-webkit-keyframes rot-2 {
+          0% {
+            transform: rotate(180deg);
+          }
+          100% {
+            transform: rotate(0deg);
+          }
+        }
+        .details {
+          display: flex;
+          padding: 0 1.5rem 1.5rem;
+          div {
+            width: 50%;
+            span {
+              color: $span-color;
+            }
+            ul {
+              list-style: none;
+              font-size: .8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.active {
+  background-color: $color !important;
+  color: black !important;
+}
