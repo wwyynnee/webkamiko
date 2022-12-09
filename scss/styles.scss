@@ -1,16 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Andika&display=swap");
-
 @import "nav";
-
-@mixin center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@mixin noneAnimation {
-  animation: none;
-  -webkit-animation: none;
-}
 
 * {
   box-sizing: border-box;
@@ -67,9 +55,10 @@ html, body {
           padding: .75rem 2rem;
           margin: 1rem .25rem 0;
           text-align: center;
+          cursor: pointer;
           color: #777;
           &:hover {
-            color: white;
+            color: white !important;
           }
           @media screen and (max-width: 417px) {
             width: calc(50% - .5rem);
@@ -208,8 +197,4 @@ html, body {
       }
     }
   }
-}
-.active {
-  background-color: $color !important;
-  color: black !important;
 }

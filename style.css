@@ -230,38 +230,89 @@ html, body {
    border: 1px #ccc solid;
    cursor: pointer;
 }
+.advantages1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .advantages{
-  margin-top: 3rem;
+  margin: 1rem;
   display: flex;
   justify-content: center;
-  
+  max-width: 1200px;
+  width: 100%;
+  padding: 1.5rem;
+}
+.uptimes2{
+  flex-wrap: wrap;
+  width: 50%;
+  display: flex;
 }
 .uptime{
-  border: 2px solid #0dd0f8;
+  margin: 1rem;
+  background-color: #e9cdeb;
   border-radius: 10px;
-  padding: 1.3rem;
-  margin-right: 9rem;
-  margin-left: 3rem;
+  padding: 1.5rem;
 }
 .chat{
-  border: 2px solid #0b7cf4;
+  padding: 1.5rem;
+  margin: 1rem;
+  background-color: #6ed7f2;
   border-radius: 10px;
-  padding: 1.3rem;
-  margin-right: 7rem;
-  margin-left: 3rem;
+}
+.function5{
+  flex-wrap: wrap;
+  width: 50%;
+  display: flex;
 }
 .function2{
-  border: 2px solid #2634f2;
+  margin: 1rem;
+  background-color: #69ec83;
   border-radius: 10px;
-  padding: 1.3rem;
-  margin-right: 5rem;
-  margin-left: 3rem;
+  padding: 1.5rem;
+
+  
 }
 
 .text3{
-  border: 2px solid #000fe6;
+  margin: 1rem;
+  background-color: #e15b4c;
   border-radius: 10px;
-  padding: 1.3rem;
-  margin-right: 3rem;
-  margin-left: 3rem;
+  padding: 1.5rem;
+
+  
+}
+.advantages h3{
+  margin-bottom: 1rem;
+}
+.buttons2{
+  margin-top: 5rem;
+  background-color: #e3dddd;
+  text-align: center;
+  border-radius: 9px;
+  padding: 2rem;
+  margin-left: 45rem;
+  margin-right: 45rem;
+}
+.buttons2 h5{
+  font-size: 1.6rem;
+}
+.buttons3{
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+}
+.invitebot{
+  color: white;
+  text-decoration: none;
+  background-color: #19c9f5;
+  border-radius: 9px;
+  padding: 0.5rem;
+}
+.helping{
+  color: white;
+  text-decoration: none;
+  background-color: #19c9f5;
+  border-radius: 9px;
+  padding: 0.5rem;
 }

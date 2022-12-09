@@ -1,0 +1,9 @@
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin noneAnimation {
+  animation: none;
+  -webkit-animation: none;
+}

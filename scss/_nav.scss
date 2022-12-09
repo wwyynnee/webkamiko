@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika&display=swap");
+
 @import "scrollbar";
+@import "mixins";
 
 .nav {
   display: flex;
   align-items: center;
   background-color: #151515;
+  font-family: "Andika", sans-serif;
   position: fixed;
   width: 100vw;
   height: 3.5rem;
@@ -38,6 +42,8 @@
     a {
       text-decoration: none;
       button {
+        @include center;
+        position: relative;
         background: transparent;
         border-radius: 4px;
         font-size: 1.025rem;
@@ -47,15 +53,31 @@
         color: white;
         height: 3.5rem;
         padding: 0 1rem;
-        &:hover {
-          color: $color;
+        svg {
+          fill: $color;
+          margin-right: .5rem;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: $color;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
         }
       }
     }
     img {
       width: 3.5rem;
-      padding: 0.25rem;
-      margin-right: 0.25rem;
+      padding: .3rem;
     }
     &:first-child {
       margin: 0 1rem;
