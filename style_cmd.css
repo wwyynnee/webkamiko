@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Andika&display=swap");
-
 ::-webkit-scrollbar {
   background-color: #151515;
   width: 6px;
@@ -148,6 +147,9 @@ html, body {
 .wrapper .main__items:first-child p {
   font-size: 1.1rem;
 }
+.wrapper .main__items:first-child p:last-child {
+  font-size: 1rem;
+}
 .wrapper .main__items ul {
   list-style: none;
   display: flex;
@@ -241,6 +243,7 @@ html, body {
 }
 .wrapper .cmd__container details summary {
   padding: 1.5rem;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;

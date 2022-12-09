@@ -42,6 +42,9 @@ html, body {
         }
         p {
           font-size: 1.1rem;
+          &:last-child {
+            font-size: 1rem;
+          }
         }
       }
       ul {
@@ -114,6 +117,7 @@ html, body {
         }
         summary {
           padding: 1.5rem;
+          cursor: pointer;
           display: flex;
           align-items: center;
           justify-content: space-between;

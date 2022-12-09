@@ -80,6 +80,8 @@ $(".all_btn").on("click", () => {
   $(".all_btn").attr("style", `background-color: ${pink} !important; color: black !important`);
   $(".main_btn, .rp_btn, .img_btn").css("backgroundColor", "#242424")
   $(".main_btn, .rp_btn, .img_btn").css("color", "#777")
+  $(".basic, .rp, .img").show()
+  $(".spanActive").text("Все команды (▽◕ ᴥ ◕▽)")
 })
 
 // Основное
@@ -87,6 +89,9 @@ $(".main_btn").on("click", () => {
   $(".main_btn").attr("style", `background-color: ${pink} !important; color: black !important`);
   $(".all_btn, .rp_btn, .img_btn").css("backgroundColor", "#242424")
   $(".all_btn, .rp_btn, .img_btn").css("color", "#777")
+  $(".rp, .img").hide()
+  $(".basic").show()
+  $(".spanActive").text("Основные команды бота (✯◡✯)")
 })
 
 // Ролевые
@@ -94,6 +99,9 @@ $(".rp_btn").on("click", () => {
   $(".rp_btn").attr("style", `background-color: ${pink} !important; color: black !important`);
   $(".all_btn, .main_btn, .img_btn").css("backgroundColor", "#242424")
   $(".all_btn, .main_btn, .img_btn").css("color", "#777")
+  $(".basic, .img").hide()
+  $(".rp").show()
+  $(".spanActive").text("Команды для ролевых игр ʕ ᵔᴥᵔ ʔ")
 })
 
 // Картинки
@@ -101,4 +109,7 @@ $(".img_btn").on("click", () => {
   $(".img_btn").attr("style", `background-color: ${pink} !important; color: black !important`);
   $(".all_btn, .main_btn, .rp_btn").css("backgroundColor", "#242424")
   $(".all_btn, .main_btn, .rp_btn").css("color", "#777")
+  $(".basic, .rp").hide()
+  $(".img").show()
+  $(".spanActive").text("Всеми любимые картинки ツ")
 })
