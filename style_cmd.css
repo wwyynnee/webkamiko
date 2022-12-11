@@ -1,10 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Andika&display=swap");
-::-webkit-scrollbar {
-  background-color: #151515;
-  width: 6px;
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  position: fixed;
+  margin-top: 3.5rem;
+  height: calc(100% - 3.5rem);
+  width: 100%;
+  background-color: #363636;
+  z-index: 2;
+  flex-direction: column;
+  top: 0;
 }
-::-webkit-scrollbar-thumb {
-  background-color: #e9cdeb;
+.menu p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  padding: 2.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  z-index: 3;
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  list-style: none;
+  font-size: 1.1rem;
+  width: 100%;
+  flex-direction: column;
+}
+.menu ul a {
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.menu ul a li {
+  padding: 1rem;
+  text-align: center;
+  margin: 0 1rem;
+  width: calc(75vw - 2rem);
+}
+@media screen and (max-width: 400px) {
+  .menu ul a li {
+    width: calc(100vw - 4rem);
+  }
+}
+.menu ul a:hover {
+  background-color: rgba(255, 255, 255, 0.0823529412);
+  animation-duration: 0.5s;
+  color: #e9cdeb;
 }
 
 .nav {
@@ -26,10 +79,15 @@
 .nav__items:first-child {
   margin: 0 1rem;
 }
+@media screen and (max-width: 768px) {
+  .nav__items:first-child {
+    margin: 0;
+  }
+}
 .nav__items:nth-child(2) .nav__container {
   display: none;
   align-items: center;
-  font-size: 2.25rem;
+  font-size: 2rem;
   height: 3.5rem;
   color: white;
   z-index: 2;
@@ -92,6 +150,14 @@
   .nav__container:nth-child(2) {
     display: none;
   }
+}
+
+::-webkit-scrollbar {
+  background-color: #151515;
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #e9cdeb;
 }
 
 * {

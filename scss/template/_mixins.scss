@@ -1,3 +1,5 @@
+@import "variables";
+
 @mixin center {
   display: flex;
   align-items: center;
@@ -6,4 +8,9 @@
 @mixin noneAnimation {
   animation: none;
   -webkit-animation: none;
+}
+@mixin box {
+  background-color: #ffffff15;
+  animation-duration: .5s;
+  color: $color;
 }

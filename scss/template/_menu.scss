@@ -1,0 +1,52 @@
+@import "mixins";
+
+.menu {
+  @include center;
+  display: none;
+  position: fixed;
+  margin-top: 3.5rem;
+  height: calc(100% - 3.5rem);
+  width: 100%;
+  background-color: $background-color;
+  z-index: 2;
+  flex-direction: column;
+  top: 0;
+  p {
+    @include center;
+    height: 50px;
+    width: 50px;
+    padding: 2.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    z-index: 3;
+  }
+  ul {
+    @include center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    list-style: none;
+    font-size: 1.1rem;
+    width: 100%;
+    flex-direction: column;
+    a {
+      color: white;
+      border-radius: 20px;
+      text-decoration: none;
+      li {
+        padding: 1rem;
+        text-align: center;
+        margin: 0 1rem;
+        width: calc(75vw - 2rem);
+        @media screen and (max-width: 400px) {
+          width: calc(100vw - 4rem);
+        }
+      }
+      &:hover {
+        @include box;
+      }
+    }
+  }
+}

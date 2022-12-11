@@ -236,7 +236,7 @@ html, body {
   justify-content: center;
 }
 .advantages{
-  margin: 1rem;
+  margin: .5rem;
   display: flex;
   justify-content: center;
   max-width: 1200px;
@@ -250,15 +250,21 @@ html, body {
 }
 .uptime{
   margin: 1rem;
-  background-color: #e9cdeb;
+  background-color: #efbb01;
   border-radius: 10px;
   padding: 1.5rem;
 }
-.chat{
+.uptime:hover {
+  background-color: #e9cdeb;
+}
+.chat{ /*кккккккккккккккккккккккккккккккккккккккккккккккккккккккккккккккккккккккк*/
   padding: 1.5rem;
   margin: 1rem;
   background-color: #6ed7f2;
   border-radius: 10px;
+}
+.chat:hover {
+  background-color: #e9cdeb;
 }
 .function5{
   flex-wrap: wrap;
@@ -270,17 +276,18 @@ html, body {
   background-color: #69ec83;
   border-radius: 10px;
   padding: 1.5rem;
-
-  
 }
-
+.function2:hover {
+  background-color: #e9cdeb;
+}
 .text3{
   margin: 1rem;
   background-color: #e15b4c;
   border-radius: 10px;
   padding: 1.5rem;
-
-  
+}
+.text3:hover {
+  background-color: #e9cdeb;
 }
 .advantages h3{
   margin-bottom: 1rem;

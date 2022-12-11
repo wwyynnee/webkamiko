@@ -113,3 +113,13 @@ $(".img_btn").on("click", () => {
   $(".img").show()
   $(".spanActive").text("Всеми любимые картинки ツ")
 })
+
+// Меню
+const menu = () => {
+  $(".menu").toggle()
+  $(".menuActive").toggleClass("closeMenu")
+  $(".closeMenu").text("✕")
+  if (!$(".menuActive").hasClass("closeMenu")) {
+    $(".menuActive").text("☰")
+  }
+}
