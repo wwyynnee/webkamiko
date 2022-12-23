@@ -5,6 +5,14 @@
   align-items: center;
   justify-content: center;
 }
+@mixin center-y {
+  display: flex;
+  align-items: center;
+}
+@mixin center-x {
+  display: flex;
+  justify-content: center;
+}
 @mixin noneAnimation {
   animation: none;
   -webkit-animation: none;
@@ -13,4 +21,10 @@
   background-color: #ffffff15;
   animation-duration: .5s;
   color: $color;
+}
+@mixin bg {
+  background: url("images/backgrounds/bg.webp");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
