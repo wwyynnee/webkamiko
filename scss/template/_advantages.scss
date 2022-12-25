@@ -1,0 +1,26 @@
+@import "mixins";
+@import "variables";
+
+.advantages {
+  @include center;
+  padding: 1rem 2rem;
+  @media screen and (max-width: 417px) {
+    padding: 0;
+  }
+  &__items {
+    @include center-x;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+  }
+  &__container {
+    background-color: $background-color-2;
+    border-radius: 20px;
+    padding: 2rem;
+    width: calc(30% + .5rem);
+    margin: 1rem;
+    @media screen and (max-width: 1231px) {
+      width: 100%;
+    }
+  }
+}

@@ -60,7 +60,7 @@
         @include center;
       }
       a {
-        background: linear-gradient(to right, var(--color), #ee9ca7);
+        background: linear-gradient(to right, $color, #ee9ca7);
         text-align: center;
         text-decoration: none;
         border-radius: 20px;
