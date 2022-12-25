@@ -71,6 +71,26 @@ const blockActive18 = () => {
   $(".cmd__18 details summary div svg").toggleClass("fillActive");
   $(".cmd__18 details summary svg").toggleClass("transformActive");
 }
+const blockActive19 = () => {
+  $(".cmd__19 details summary div svg").toggleClass("fillActive");
+  $(".cmd__19 details summary svg").toggleClass("transformActive");
+}
+const blockActive20 = () => {
+  $(".cmd__20 details summary div svg").toggleClass("fillActive");
+  $(".cmd__20 details summary svg").toggleClass("transformActive");
+}
+const blockActive21 = () => {
+  $(".cmd__21 details summary div svg").toggleClass("fillActive");
+  $(".cmd__21 details summary svg").toggleClass("transformActive");
+}
+const blockActive22 = () => {
+  $(".cmd__22 details summary div svg").toggleClass("fillActive");
+  $(".cmd__22 details summary svg").toggleClass("transformActive");
+}
+const blockActive23 = () => {
+  $(".cmd__23 details summary div svg").toggleClass("fillActive");
+  $(".cmd__23 details summary svg").toggleClass("transformActive");
+}
 
 // Вкладки
 const pink = "#e9cdeb";
