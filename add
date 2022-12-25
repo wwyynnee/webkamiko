@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="0; URL=https://discord.com/api/oauth2/authorize?client_id=980377656291913728&permissions=8&scope=bot" />
+  <link rel="icon" href="./images/icon.png" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+  <title>Kamiko</title>
+</head>
+<body>
+  
+</body>
+</html>
