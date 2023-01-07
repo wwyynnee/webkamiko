@@ -28,7 +28,7 @@
     }
     &:first-child {
       p {
-        margin: .5rem;
+        margin: .5rem 0;
         @media screen and (max-width: 417px) {
           margin: 0;
         }
